@@ -1,12 +1,13 @@
-repositories{
-    jcenter()
-    flatDir{
+repositories {
+    google()
+    mavenCentral()
+    flatDir {
         dirs 'libs'
     }
 }
 
 dependencies {
-    api(name:'barcodescanner-release-2.1.5', ext:'aar')
+    implementation(name:'barcodescanner-release-2.1.5', ext:'aar')
 }
 
 android {
